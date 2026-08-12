@@ -24,6 +24,10 @@ jobs:
         run: mkdir -v -p build/android
 
       - name: Export Android debug APK
+        env:
+          JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+          ANDROID_HOME: /usr/lib/android-sdk
+          ANDROID_SDK_ROOT: /usr/lib/android-sdk
         run: |
           godot --headless --verbose --export-debug "Android" build/android/AboveTheDeath.apk
 

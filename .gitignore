@@ -1,0 +1,14 @@
+# Godot 4 specific ignores
+.godot/
+.import/
+export.cfg
+export_credentials.cfg
+
+# Build output
+build/
+*.apk
+*.aab
+
+# OS
+.DS_Store
+Thumbs.db

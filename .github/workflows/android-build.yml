@@ -28,6 +28,11 @@ jobs:
           sudo apt-get install -y libfontconfig1 libxcursor1 libxinerama1 libxrandr2 libxi6 libgl1 libglu1-mesa libpulse0
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2
 
+      - name: Start ADB server
+        run: |
+          adb start-server
+          adb devices
+
       - name: Export Android debug APK
         id: export
         uses: firebelley/godot-export@v8.0.0

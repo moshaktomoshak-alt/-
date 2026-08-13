@@ -25,7 +25,7 @@ jobs:
       - name: Install Linux runtime libraries for Godot
         run: |
           sudo apt-get update
-          sudo apt-get install -y libfontconfig1 libxcursor1 libxinerama1 libxrandr1 libxi6 libgl1 libglu1-mesa libpulse0
+          sudo apt-get install -y libfontconfig1 libxcursor1 libxinerama1 libxrandr2 libxi6 libgl1 libglu1-mesa libpulse0
           sudo apt-get install -y libasound2t64 || sudo apt-get install -y libasound2
 
       - name: Export Android debug APK
